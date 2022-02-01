@@ -7,7 +7,8 @@ with open('pokemon.csv') as f:
     for line in c:
         chart.append(line)
 
-atk = chart[pokemon]['nb_hab_2012']
+atk = chart[pokemon]['Attack']
+defense = chart[pokemon]['Defense']
 
 def pokemon_nbr(pokemon: str)-> int:
 	"""takes a pokemon name and returns his index number"""
@@ -20,4 +21,4 @@ def pokemon_nbr(pokemon: str)-> int:
 	return pokemon_index
 
 def damage(pokemon):
-	dmg = ((12/5)*/def)*type
+	dmg = ((12/5)*/defense)
