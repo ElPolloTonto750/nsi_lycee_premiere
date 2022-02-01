@@ -1,4 +1,4 @@
-damage = ((12/5)*pwr*atk/def)*type
+damage = ((12/5)*atk/def)*type
 
 type_dmg = effective *2, not effective, *0.5, immune *0, normal *1
 
