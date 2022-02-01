@@ -1,3 +1,3 @@
 from math import *
 
-def 
+def
