@@ -1,0 +1,1 @@
+dmg = (((2*lvl/5)+2)pwr*atk/def)*type
