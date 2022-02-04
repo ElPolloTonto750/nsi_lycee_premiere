@@ -2,7 +2,7 @@ from math import *
 
 import csv
 chart = []
-with open('pokemon.csv') as f:
+with open("pokemon.csv") as f:
     c = csv.DictReader(f, delimiter=',')
     for line in c:
         chart.append(line)
