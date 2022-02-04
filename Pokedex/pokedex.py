@@ -1,11 +1,11 @@
 from math import *
-
 import csv
 chart = []
 with open("pokemon.csv") as f:
     c = csv.DictReader(f, delimiter=',')
     for line in c:
         chart.append(line)
+
 
 def pokemon_index(pokemon: str)-> int:
     """takes a pokemon name and returns his index number"""
@@ -17,6 +17,19 @@ def pokemon_index(pokemon: str)-> int:
             pokemon_nbr = int(line['#'])
     return pokemon_nbr
 
+
+def atk(pokemon):
+    pokemon_nbr = pokemon_index(pokemon)
+    atk = int(chart[pokemon_nbr]['Attack'])
+    return atk
+
+
+def defense(pokemon):
+    pokemon_nbr = pokemon_index(pokemon)
+    defense = int(chart[pokemon_nbr]['Defense'])
+    return defense
+
+    
 def damage(pokemon):
     pokemon_nbr = pokemon_index(pokemon)
     atk = int(chart[pokemon_nbr]['Attack'])
