@@ -29,3 +29,5 @@ def damage(pokemon):
 """
 def whos_faster(chart[pokemon_nbr], chart[pokemon_nbr2]):
 """
+
+
