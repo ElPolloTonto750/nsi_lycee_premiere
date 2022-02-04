@@ -25,3 +25,7 @@ def damage(pokemon):
     print(defense)
     dmg = ((2.4*atk)/(defense/5))
     return dmg
+
+"""
+def whos_faster(chart[pokemon_nbr], chart[pokemon_nbr2]):
+"""
