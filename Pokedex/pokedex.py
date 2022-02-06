@@ -39,17 +39,16 @@ def defense(pokemon: str)-> int:
 
 
     
-def damage(pokemon: str)-> float:
+def raw_damage(pokemon: str)-> float:
 	"""takes a pokemon string and returns his damage"""
     pokemon_nbr = pokemon_index(pokemon)
     atk = int(chart[pokemon_nbr]['Attack'])
     defense = int(chart[pokemon_nbr]['Defense'])
-		bonus_dmg = random.randint(0,20)
     print(atk)
     print(defense)
 		print(bonus_dmg)
-    dmg = ((2.4*atk)/(defense/5))
-    return dmg
+    raw_dmg = ((2.4*atk)/(defense/5))
+    return raw_dmg
 
 
 
