@@ -65,4 +65,3 @@ def fastest_pokemon(pokemon1: str, pokemon2: str)-> str:
 		fastestpok = random.choice(randlist)
 	return fastestpok
 
-	
