@@ -27,12 +27,13 @@ def pokemon_check(pokemon: int):
   l = []
   f = open("pokedex.csv", "r")
   c = csv.DictReader(f, delimiter=',')
-	if pokemon['Pokemon'] != '':
-		pok_name = (pokemon-1)['Pokemon']
-		pok_nbr = pokemon
+	pok_nbr = pokemon-1
+	if pok_nbr['Pokemon'] != '':
+		pok_name = pok_nbr['Pokemon']
+		pok_desc = pok_desc['Description']
 	else:
 		return "Pokemon not found. Please enter a correct value."
-	return "Your pokemon's name is " + pok_name + " and his pokedex number is " + pok_nbr + '.'
+	return "Your pokemon's name is " + pok_name + " and his pokedex number is " + pok_nbr + '. ' + pok_desc
 
 
 
@@ -54,7 +55,9 @@ def defense(pokemon: str)-> int:
 
 def sprite(pokemon: str)-> str:
 	"""takes a pokemon string and returns the link of his sprite png"""
-	pokemon
+	pokemon_nbr = pokemon_index(pokemon)
+  link = int(chart[pokemon_nbr]['PNG'])
+	return link
 
 
     
