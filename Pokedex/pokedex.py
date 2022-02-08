@@ -64,3 +64,5 @@ def fastest_pokemon(pokemon1: str, pokemon2: str)-> str:
 	elif atksp1 = atksp2:
 		fastestpok = random.choice(randlist)
 	return fastestpok
+
+	

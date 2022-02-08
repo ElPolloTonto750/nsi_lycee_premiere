@@ -1,6 +1,0 @@
-damage = ((12/5)*atk/def)*type+random
-
-type_dmg = effective *2, not effective, *0.5, immune *0, normal *1
-
-https://bulbapedia.bulbagarden.net/wiki/Damage (damage)
-https://pokemondb.net/move/all (moves)
