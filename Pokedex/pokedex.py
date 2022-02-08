@@ -93,7 +93,7 @@ def battle_HP(HP: int, dmg: int)->int:
 
 
 def flinching():
-	return "Sorry, your pokemon is unable to fight, please let him alone"
+	return "Your pokemon is affected by flinching, and is unable to fight!"
 
 
 
