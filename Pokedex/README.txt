@@ -11,6 +11,10 @@ https://replit.com/talk/ask/How-to-run-another-python-file-not-the-mainpy/29188
 ///SOURCES
 https://bulbapedia.bulbagarden.net/wiki/Damage
 https://pokemondb.net/move/all
+https://github.com/msikma/pokesprite
+https://pokemondb.net/pokedex/national
+https://docs.google.com/spreadsheets/d/1U4qhumcTnkObicnnsfjgXcnLyhv6J407dGyIERttbDE/edit?usp=sharing
+https://docs.google.com/spreadsheets/d/1fcZ4xpDpcgP08px3WtWoa4xdMKXBfBeNmmFhK7DEg70/edit?usp=sharing
 ///
 
 ///DISCLAIMER
