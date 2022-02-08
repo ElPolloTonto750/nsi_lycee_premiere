@@ -92,11 +92,6 @@ def battle_HP(HP: int, dmg: int)->int:
 
 
 
-def flinching():
-	return "Your pokemon is affected by flinching, and is unable to fight!"
-
-
-
 def battle():
 	pok1 = int(input("What pokemon do you choose for the fight? (number)"))
 	pok2 = int(input("What pokemon do you choose for the fight? (number)"))
