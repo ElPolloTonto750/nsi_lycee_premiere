@@ -28,7 +28,7 @@ def pokemon_check(pokemon: int):
   f = open("pokedex.csv", "r")
   c = csv.DictReader(f, delimiter=',')
 	if pokemon['Pokemon'] != '':
-		pok_name = pokemon['Pokemon']
+		pok_name = (pokemon-1)['Pokemon']
 		pok_nbr = pokemon
 	else:
 		return "Pokemon not found. Please enter a correct value."
@@ -90,7 +90,7 @@ def battle_HP(HP: int, dmg: int)->int:
 
 
 def flinching():
-	return sus
+	return "Sorry, your pokemon is unable to fight, please let him alone"
 
 
 
