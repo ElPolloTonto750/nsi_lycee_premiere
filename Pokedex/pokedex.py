@@ -3,9 +3,9 @@ from random import *
 import csv
 chart = []
 with open("pokemon.csv") as f:
-    c = csv.DictReader(f, delimiter=',')
-    for line in c:
-        chart.append(line)
+  c = csv.DictReader(f, delimiter=',')
+  for line in c:
+		chart.append(line)
 
 
 def pokemon_index(pokemon: str)-> int:
@@ -22,30 +22,33 @@ def pokemon_index(pokemon: str)-> int:
 
 def atk(pokemon: str)-> int:
 	"""takes a pokemon string and returns his attack"""
-    pokemon_nbr = pokemon_index(pokemon)
-    atk = int(chart[pokemon_nbr]['Attack'])
-    return atk
+	pokemon_nbr = pokemon_index(pokemon)
+  atk = int(chart[pokemon_nbr]['Attack'])
+  return atk
 
 
 
 def defense(pokemon: str)-> int:
 	"""takes a pokemon string and returns his defense"""
-    pokemon_nbr = pokemon_index(pokemon)
-    defense = int(chart[pokemon_nbr]['Defense'])
-    return defense
+  pokemon_nbr = pokemon_index(pokemon)
+  defense = int(chart[pokemon_nbr]['Defense'])
+  return defense
+
+
+
+def sprite(pokemon: str)-> str:
+	"""takes a pokemon string and returns the link of his sprite png"""
+	pokemon
 
 
     
 def raw_damage(pokemon: str)-> float:
 	"""takes a pokemon string and returns his damage"""
-    pokemon_nbr = pokemon_index(pokemon)
-    atk = int(chart[pokemon_nbr]['Attack'])
-    defense = int(chart[pokemon_nbr]['Defense'])
-    print(atk)
-    print(defense)
-		print(bonus_dmg)
-    raw_dmg = ((2.4*atk)/(defense/5))
-    return raw_dmg
+  pokemon_nbr = pokemon_index(pokemon)
+  atk = int(chart[pokemon_nbr]['Attack'])
+  defense = int(chart[pokemon_nbr]['Defense'])
+  raw_dmg = ((2.4*atk)/(defense/5))
+  return raw_dmg
 
 
 
