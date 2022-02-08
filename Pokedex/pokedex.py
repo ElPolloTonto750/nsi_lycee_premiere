@@ -1,22 +1,33 @@
 from math import *
 from random import *
+
 import csv
 chart = []
-with open("pokemon.csv") as f:
+with open("pokedex.csv") as f:
   c = csv.DictReader(f, delimiter=',')
   for line in c:
 		chart.append(line)
 
 
+
 def pokemon_index(pokemon: str)-> int:
   """takes a pokemon name and returns his index number"""
   l = []
-  f = open("pokemon.csv", "r")
+  f = open("pokedex.csv", "r")
   c = csv.DictReader(f, delimiter=',')
 	for line in c:
-    if line['Name'] == pokemon:
-       pokemon_nbr = int(line['#'])
+    if line['Pokemon'] == pokemon:
+       pokemon_nbr = int(line['Number'])
   return pokemon_nbr
+
+
+
+def pokemon_check(pokemon):
+  l = []
+  f = open("pokedex.csv", "r")
+  c = csv.DictReader(f, delimiter=',')
+	if type(pokemon) == int:
+		pokemon_name = pokemon['Pokemon']
 
 
 
@@ -57,16 +68,29 @@ def fastest_pokemon(pokemon1: str, pokemon2: str)-> str:
 	randlist = [pokemon1; pokemon2]
 	pokemon1_nbr = pokemon_index(pokemon)
 	pokemon2_nbr = pokemon_index(pokemon)
-	atksp1 = int(chart[pokemon1_nbr]['Sp. Atk']
-	atksp2 = int(chart[pokemon2_nbr]['Sp. Atk']
+	atksp1 = int(chart[pokemon1_nbr]['Speed']
+	atksp2 = int(chart[pokemon2_nbr]['Speed']
 	if atksp1 > atksp2:
 		fastestpok = pokemon1
 	elif atksp1 = atksp2:
 		fastestpok = random.choice(randlist)
 	return fastestpok
 
+
+
 def battle_HP(HP: int, dmg: int)->int:
 	new_HP = HP - dmg
 	return new_HP
 
 
+
+def flinching():
+	return sus
+
+
+
+def battle():
+	pok1 = int(input("What pokemon do you choose for the fight? (number)"))
+	pok2 = int(input("What pokemon do you choose for the fight? (number)"))
+	start_pok = fastest_pokemon(pok1, pok2)
+	return winner
