@@ -10,6 +10,7 @@ https://replit.com/talk/ask/How-to-run-another-python-file-not-the-mainpy/29188
 
 ///SOURCES
 https://bulbapedia.bulbagarden.net/wiki/Damage
+https://realpython.com/pysimplegui-python/
 https://pokemondb.net/move/all
 https://github.com/msikma/pokesprite
 https://pokemondb.net/pokedex/national
