@@ -1,9 +1,3 @@
 damage = ((12/5)*atk/def)*type+random
 
 type_dmg = effective *2, not effective, *0.5, immune *0, normal *1
-
-we will not include legendary pokemons for players fairness (if legendary = true in csv, refuse choice)
-
-we will not include all of the pokemons abilities, just 4 per types, and 2 of each if a pokemon has 2 types. The abilities are included in the pok_moves.csv that we filled in from a real database.
-
-this means that this is not a realistic or fidelistic representation of pokemon's gameplay, and it is surely inaccurate and false.
