@@ -22,12 +22,17 @@ def pokemon_index(pokemon: str)-> int:
 
 
 
-def pokemon_check(pokemon):
+def pokemon_check(pokemon: int):
+	"""Takes a pokemon index number, checks if it exists and returns info"""
   l = []
   f = open("pokedex.csv", "r")
   c = csv.DictReader(f, delimiter=',')
-	if type(pokemon) == int:
-		pokemon_name = pokemon['Pokemon']
+	if pokemon['Pokemon'] != '':
+		pok_name = pokemon['Pokemon']
+		pok_nbr = pokemon
+	else:
+		return "Pokemon not found. Please enter a correct value."
+	return "Your pokemon's name is " + pok_name + " and his pokedex number is " + pok_nbr + '.'
 
 
 
