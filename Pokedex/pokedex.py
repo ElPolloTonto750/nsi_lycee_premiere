@@ -7,19 +7,16 @@ with open("pokemon.csv") as f:
     for line in c:
         chart.append(line)
 
-#import modules, files and lists
-
-
 
 def pokemon_index(pokemon: str)-> int:
-    """takes a pokemon name and returns his index number"""
-    l = []
-    f = open("pokemon.csv", "r")
-    c = csv.DictReader(f, delimiter=',')
-    for line in c:
-        if line['Name'] == pokemon:
-            pokemon_nbr = int(line['#'])
-    return pokemon_nbr
+  """takes a pokemon name and returns his index number"""
+  l = []
+  f = open("pokemon.csv", "r")
+  c = csv.DictReader(f, delimiter=',')
+	for line in c:
+    if line['Name'] == pokemon:
+       pokemon_nbr = int(line['#'])
+  return pokemon_nbr
 
 
 
@@ -64,4 +61,9 @@ def fastest_pokemon(pokemon1: str, pokemon2: str)-> str:
 	elif atksp1 = atksp2:
 		fastestpok = random.choice(randlist)
 	return fastestpok
+
+def battle_HP(HP: int, dmg: int)->int:
+	new_HP = HP - dmg
+	return new_HP
+
 
